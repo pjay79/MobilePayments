@@ -1,0 +1,24 @@
+# Use iOS 9 and above
+platform :ios, '9.0'
+
+# Specify Workspace
+workspace 'reactnativehooks'
+
+target 'reactnativehooks' do
+  # Stripe
+  pod 'Stripe', '~> 14.0.0'
+
+  # Install additional dependencies
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Performance'
+  pod 'Firebase/Storage'
+  pod 'tipsi-stripe', :path => '../node_modules/tipsi-stripe'
+
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
+end

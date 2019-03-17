@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../node_modules/tipsi-stripe/ios/TPSStripe"
+      name = "TPSStripe">
+      <FileRef
+         location = "group:TPSError.h">
+      </FileRef>
+      <FileRef
+         location = "group:TPSCardField.h">
+      </FileRef>
+      <FileRef
+         location = "group:TPSCardFieldManager.m">
+      </FileRef>
+      <FileRef
+         location = "group:TPSStripeManager.h">
+      </FileRef>
+      <FileRef
+         location = "group:TPSError.m">
+      </FileRef>
+      <FileRef
+         location = "group:TPSCardField.m">
+      </FileRef>
+      <FileRef
+         location = "group:TPSStripeManager.m">
+      </FileRef>
+      <FileRef
+         location = "group:TPSCardFieldManager.h">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:reactnativehooks.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
