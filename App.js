@@ -5,8 +5,8 @@ import CreditCardStripe from './app/components/CreditCardStripe';
 
 const App = () => (
   <SafeAreaView style={styles.container}>
-    <Text style={styles.header}>React Native Payments</Text>
-    <Text style={styles.subheader}>Using Hooks, useState & useEffect</Text>
+    <Text style={styles.header}>Mobile Payments</Text>
+    <Text style={styles.subheader}>REACT NATIVE</Text>
     <CreditCardStripe />
     {/* <CreditCardInput /> */}
   </SafeAreaView>

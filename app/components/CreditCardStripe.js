@@ -8,7 +8,7 @@ stripe.setOptions({
   androidPayMode: 'test',
 });
 
-const CreditCardStripe = () => {
+function CreditCardStripe() {
   const requestPayment = async () => {
     try {
       const stripeTokenInfo = await stripe.paymentRequestWithCardForm();
@@ -23,7 +23,7 @@ const CreditCardStripe = () => {
       <Button title="Make a payment" onPress={requestPayment} />
     </View>
   );
-};
+}
 
 export default CreditCardStripe;
 
