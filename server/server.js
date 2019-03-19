@@ -10,11 +10,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/payments', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Welcome to Mobile Payments Gateway');
 });
 
-app.post('/payments/', async (req, res) => {
+app.post('/api/payments/', async (req, res) => {
   try {
     const result = await stripe.charges.create({
       amount: req.body.amount, // Unit: cents
