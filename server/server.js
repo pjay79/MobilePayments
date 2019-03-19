@@ -16,9 +16,15 @@ app.get('/', (req, res) => {
 
 app.post('/api/payments/', async (req, res) => {
   try {
+    // const customer = await stripe.customers.create({
+    //   email: 'test@test.com',
+    //   source: req.body.tokenId,
+    // });
     const result = await stripe.charges.create({
       amount: req.body.amount, // Unit: cents
       currency: 'eur',
+      // customer: customer.id,
+      // source: customer.default_source.id,
       source: req.body.tokenId,
       description: 'Test payment',
     });
