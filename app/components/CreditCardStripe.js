@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 import Config from 'react-native-config';
 import stripe from 'tipsi-stripe';
+import axios from 'axios';
 
 stripe.setOptions({
   publishableKey: Config.STRIPE_PUBLISH_KEY,
@@ -11,12 +12,28 @@ stripe.setOptions({
 function CreditCardStripe() {
   const requestPayment = async () => {
     try {
-      const stripeTokenInfo = await stripe.paymentRequestWithCardForm();
+      const stripeTokenInfo = await axios({
+        method: 'post',
+        url: 'https://api.stripe.com/v1/tokens',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Authorization: `Bearer ${Config.STRIPE_SECRET_KEY}`,
+        },
+      });
       console.log('Token created', { stripeTokenInfo });
     } catch (error) {
       console.log('Payment failed', { error });
     }
   };
+  // const requestPayment = async () => {
+  //   try {
+  //     const stripeTokenInfo = await stripe.paymentRequestWithCardForm();
+  //     console.log('Token created', { stripeTokenInfo });
+  //   } catch (error) {
+  //     console.log('Payment failed', { error });
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
