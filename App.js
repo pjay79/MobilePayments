@@ -1,14 +1,12 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import CreditCardStripe from './app/components/CreditCardStripe';
-// import CreditCardInput from './app/components/CreditCardInput';
 
 const App = () => (
   <SafeAreaView style={styles.container}>
     <Text style={styles.header}>Mobile Payments</Text>
     <Text style={styles.subheader}>REACT NATIVE</Text>
     <CreditCardStripe />
-    {/* <CreditCardInput /> */}
   </SafeAreaView>
 );
 
