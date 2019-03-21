@@ -10,7 +10,5 @@ functions:
   app:
     handler: lambda.handler
     events:
-      - http:
-          path: /{proxy+}
-          method: ANY
-          cors: true
+      - http: ANY /
+      - http: 'ANY {proxy+}'
