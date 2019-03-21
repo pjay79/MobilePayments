@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,7 +20,7 @@ app.post('/api/payments/', async (req, res) => {
       source: req.body.tokenId,
     });
     const result = await stripe.charges.create({
-      amount: req.body.amount, // Unit: cents
+      amount: req.body.amount,
       currency: 'eur',
       customer: customer.id,
       source: customer.default_source.id,
@@ -33,6 +32,4 @@ app.post('/api/payments/', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log('Server is running on Port: ', PORT);
-});
+module.exports = app;

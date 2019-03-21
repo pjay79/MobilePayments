@@ -1,7 +1,9 @@
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
+# package directories
+node_modules
+jspm_packages
 
+# Serverless directories
+.serverless
+
+# Environment 
 .env

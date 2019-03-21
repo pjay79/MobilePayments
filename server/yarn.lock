@@ -100,6 +100,14 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+aws-serverless-express@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.3.5.tgz#0cb9de00dbbf29dfe4c096ac573a518c3bda933a"
+  integrity sha512-j/rVn0opGkksCQjUd0ji9HZKjcx2E+MbBM3p68ocYStG6B16Wl88Hqxd/d1TdwE5RRo8g0uhiFaLTfp8tA4eKg==
+  dependencies:
+    binary-case "^1.0.0"
+    type-is "^1.6.16"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -117,6 +125,11 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
+
+binary-case@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/binary-case/-/binary-case-1.1.4.tgz#d687104d59e38f2b9e658d3a58936963c59ab931"
+  integrity sha512-9Kq8m6NZTAgy05Ryuh7U3Qc4/ujLQU1AZ5vMw4cr3igTdi5itZC6kCNrRr2X8NzPiDn2oUIFTfa71DKMnue/Zg==
 
 binary-extensions@^1.0.0:
   version "1.13.0"
@@ -1799,9 +1812,9 @@ strip-json-comments@~2.0.1:
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
 stripe@^6.27.0:
-  version "6.27.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-6.27.0.tgz#e3146b3a9f277f4349695481b2367eb7a7a87232"
-  integrity sha512-vUVrj3f0bmVYkpmT+wKZP2pgGtnPwQJFSW5DSb9jYQiCzUJA24+bgVB0pste4jFBZ41P+iNZ6+Ir6BMQ77Kt0g==
+  version "6.28.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-6.28.0.tgz#81f2bf174efe9503b50f24930a7e1d195c60f810"
+  integrity sha512-4taF37geIr9DqvWEm3G9VCz2iJSV/DFc3PcElCQdQK5GUMI/MOj6XE0oJRYMOAHz0Oq8pT+4yDQmkh3SDI3nQA==
   dependencies:
     lodash.isplainobject "^4.0.6"
     qs "^6.6.0"
@@ -1872,7 +1885,7 @@ touch@^3.1.0:
   dependencies:
     nopt "~1.0.10"
 
-type-is@~1.6.16:
+type-is@^1.6.16, type-is@~1.6.16:
   version "1.6.16"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
   integrity sha512-HRkVv/5qY2G6I8iab9cI7v1bOIdhm94dVjQCPFElW9W+3GeDOSHmy2EBYe4VTApuzolPcmgFTN3ftVJRKR2J9Q==

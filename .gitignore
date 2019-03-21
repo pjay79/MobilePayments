@@ -57,4 +57,5 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
+# Environment
 .env
